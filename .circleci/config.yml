@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build-job:
+    docker:
+      - image: circleci/ruby
+    working_directory: ~/test
+    steps:
+      - checkout
+      - run: ruby phuby.rb
+
